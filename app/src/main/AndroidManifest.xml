@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fiventapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bg1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bg1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.fiventapp.Page.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.fiventapp.Page.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.fiventapp.Page.SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.fiventapp.Page.Add_Event"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.fiventapp.Page.Home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.fiventapp.Page.DetailEvent"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+        <activity
+            android:name="com.example.fiventapp.Page.My_Event"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.fiventapp.Page.Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.fiventapp.Page.EditProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.fiventapp.Page.DetailFoto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.fiventapp.Page.ProfilePerson"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+        <activity
+            android:name=".Page.Wishlist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Page.Category"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

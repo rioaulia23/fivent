@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/footer"
+            android:overScrollMode="never"
+            android:scrollIndicators="none"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+
+
+                    <ImageView
+                        android:id="@+id/brosur2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overScrollMode="never"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gunung"
+
+                        >
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|start"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:contextClickable="true"
+
+                        android:src="@drawable/ic_arrow_back" />
+
+                    <!--                    <ImageView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_gravity="top|end"-->
+                    <!--                        android:layout_margin="10dp"-->
+                    <!--                        android:src="@drawable/share" />-->
+
+                    <TextView
+                        android:id="@+id/title_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="#B0333639"
+                        android:fontFamily="@font/elliotsans_medium"
+                        android:padding="8dp"
+                        android:text="Seminar Enterprenur"
+                        android:textColor="#fff"
+                        android:textSize="25sp"
+                        app:layout_anchor="@id/brosur2"
+                        app:layout_anchorGravity="top|end" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <!--                    <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator-->
+                    <!--                        android:id="@+id/spring_dots_indicator"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_gravity="center"-->
+                    <!--                        android:layout_marginTop="5dp"-->
+                    <!--                        app:dampingRatio="0.5"-->
+                    <!--                        app:dotsColor="@color/colorPrimary"-->
+                    <!--                        app:dotsCornerRadius="5dp"-->
+                    <!--                        app:dotsSize="8dp"-->
+                    <!--                        app:dotsSpacing="2dp"-->
+                    <!--                        app:dotsStrokeColor="@color/colorPrimary"-->
+                    <!--                        app:dotsStrokeWidth="1dp"-->
+                    <!--                        app:stiffness="500" />-->
+
+                    <!--                    <RelativeLayout-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content">-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:id="@+id/desc_barang"-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_margin="20dp"-->
+                    <!--                            android:fontFamily="@font/gothic_0"-->
+                    <!--                            android:text="@string/desc"-->
+                    <!--                            android:textAlignment="viewStart" />-->
+                    <!--                    </RelativeLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#edebeb" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gothic_0"
+                                android:text="Category : "
+                                android:textAlignment="textStart" />
+
+                            <TextView
+                                android:id="@+id/detail_cat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gothic_0"
+                                android:text=""
+                                android:textAlignment="textStart"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gothic_0"
+                                android:text="Place : "
+                                android:textAlignment="textStart" />
+
+                            <TextView
+                                android:id="@+id/detail_place"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gothic_0"
+                                android:text=""
+                                android:textAlignment="textStart"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gothic_0"
+                                android:text="Domisili : "
+                                android:textAlignment="textStart" />
+
+                            <TextView
+                                android:id="@+id/detail_dom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gothic_0"
+                                android:text=""
+                                android:textAlignment="textStart"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gothic_0"
+                                android:text="Participant : "
+                                android:textAlignment="textStart" />
+
+                            <TextView
+                                android:id="@+id/detail_par"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gothic_0"
+                                android:text=""
+                                android:textAlignment="textStart"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gothic_0"
+                                android:text="Open Register : "
+                                android:textAlignment="textStart" />
+
+                            <TextView
+                                android:id="@+id/detail_open"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gothic_0"
+                                android:text=""
+                                android:textAlignment="textStart"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gothic_0"
+                                android:text="Close Register : "
+                                android:textAlignment="textStart" />
+
+                            <TextView
+                                android:id="@+id/detail_close"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gothic_0"
+                                android:text=""
+                                android:textAlignment="textStart"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gothic_0"
+                                android:text="Slot : "
+                                android:textAlignment="textStart" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/detail_sisa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginBottom="8dp"
+
+                                    android:fontFamily="@font/gothic_0"
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    android:textAllCaps="true" />
+
+                                <TextView
+                                    android:id="@+id/k"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginBottom="8dp"
+
+                                    android:fontFamily="@font/gothic_0"
+                                    android:text="/"
+                                    android:textAlignment="textStart"
+                                    android:textAllCaps="true" />
+
+                                <TextView
+                                    android:id="@+id/detail_slot"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:fontFamily="@font/gothic_0"
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    android:textAllCaps="true" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#edebeb" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ava2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/gunung" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/detail_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/elliotsans_medium"
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/cyan_500"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/viewprofile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_viewmore"
+                            android:text="View Profile"
+                            android:textAllCaps="false"
+                            android:textColor="@color/cyan_500" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#edebeb" />
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginTop="10dp"-->
+                    <!--                        android:orientation="vertical">-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:fontFamily="@font/elliotsans_medium"-->
+                    <!--                            android:text="Recommended"-->
+                    <!--                            android:textAppearance="@style/TextAppearance.AppCompat.Large" />-->
+
+
+                    <!--                        <GridView-->
+                    <!--                            android:id="@+id/gv_recommended"-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="match_parent"-->
+                    <!--                            android:layout_marginTop="10dp"-->
+
+                    <!--                            android:contextClickable="true"-->
+                    <!--                            android:layout_gravity="end"-->
+                    <!--                            android:numColumns="2"-->
+                    <!--                            android:scrollbars="none"-->
+                    <!--                            tools:listitem="@layout/item_detail_categories" />-->
+
+                    <!--                        <Button-->
+                    <!--                            android:id="@+id/btn_more"-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_marginTop="10dp"-->
+                    <!--                            android:layout_marginBottom="10dp"-->
+                    <!--                            android:background="@drawable/btn_viewmore"-->
+                    <!--                            android:fontFamily="@font/elliotsans_medium"-->
+                    <!--                            android:text="View More"-->
+                    <!--                            android:textAllCaps="false"-->
+                    <!--                            android:textColor="@color/cyan_500" />-->
+                    <!--                    </LinearLayout>-->
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:fontFamily="@font/gothic_0"
+                android:text="Fee : Rp "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#ffff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detail_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:fontFamily="@font/gothic_0"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#ffff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_hijau"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:fontFamily="@font/elliotsans_medium"
+                android:text="order"
+                android:textAllCaps="false"
+                android:textColor="#ffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/btnfav2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="10dp"-->
+    <!--        android:backgroundTint="@color/white"-->
+    <!--        android:clickable="true"-->
+    <!--        android:contextClickable="true"-->
+    <!--        android:elevation="10dp"-->
+    <!--        android:outlineProvider="background"-->
+    <!--        android:src="@drawable/fav_red"-->
+    <!--        app:backgroundTint="@color/white"-->
+    <!--        app:fabSize="normal"-->
+    <!--        app:layout_anchor="@id/ll_bot"-->
+    <!--        app:layout_anchorGravity="top|end" />-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

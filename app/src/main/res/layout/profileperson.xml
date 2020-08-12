@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/barprofileperseon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:theme="@style/AppTheme"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlprofileperson"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/potosampul"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/fivent_b" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:title="PROFILE"
+            app:titleTextColor="@color/white" />
+
+
+        <RelativeLayout
+            android:id="@+id/ppp"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/potosampul">
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvNama2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ppp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/img_profile2"
+            android:text="Lorem Ipsum"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tvPhone2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/potosampul"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/img_profile2"
+            android:text="54652321365"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/rl"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_profile" />
+        <!--    <androidx.recyclerview.widget.RecyclerView-->
+        <!--        android:layout_below="@+id/ppp"-->
+        <!--        android:id="@+id/rcv_profile"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent">-->
+
+        <!--    </androidx.recyclerview.widget.RecyclerView>-->
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ppp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_person"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_event" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "16721687210",
+    "firebase_url": "https://fivent-44ba3.firebaseio.com",
+    "project_id": "fivent-44ba3",
+    "storage_bucket": "fivent-44ba3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16721687210:android:0babae05baf64b146b16d3",
+        "android_client_info": {
+          "package_name": "com.example.fiventapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16721687210-7buoohou2s7o7q2nb4u8ti1gr3ri524f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fiventapp",
+            "certificate_hash": "971e0c278d7185c3dc8c059005a48f7377bf3ead"
+          }
+        },
+        {
+          "client_id": "16721687210-9gsgkhckeberhsq8rlsecmdffeuqvkos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuIsP5ZEV9EmRBvvLf1y5VVNzRSGLJxIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16721687210-9gsgkhckeberhsq8rlsecmdffeuqvkos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

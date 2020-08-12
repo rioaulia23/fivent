@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FiVent</string>
+    <string name="desc">Gunung begitu indah untuk di pandang. Sangat indah untuk di pandang. Alam kita emang sangat indah. Sangat indah untuk di pandang. Alam kita emang sangat indah. Sangat indah untuk di pandang. Alam kita emang sangat indah. Alam kita emang sangat indah. Alam kita emang sangat indah. Alam kita emang sangat indah. Alam kita emang sangat indah. Alam kita emang sangat indah. Alam kita emang sangat indah. Alam kita emang sangat indah. Alam kita emang sangat indah</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="cat">
+        <item>Expo</item>
+        <item>Seminar</item>
+        <item>Job Fair</item>
+        <item>Sport</item>
+        <item>Tournament</item>
+        <item>Donation</item>
+    </string-array>
+    <string-array name="par">
+        <item>Umum</item>
+        <item>Pelajar</item>
+        <item>SD/Sederajat</item>
+        <item>SMP/Sederajat</item>
+        <item>SMA/Sederajat</item>
+    </string-array>
+</resources>

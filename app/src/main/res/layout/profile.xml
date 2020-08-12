@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/bar_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_pro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <ImageView
+            android:id="@+id/potosampul"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/fivent_b" />
+
+
+        <RelativeLayout
+            android:id="@+id/ppp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/potosampul">
+
+
+            <TextView
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/lengkung"
+                android:fontFamily="@font/elliotsans_medium"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:text="Edit"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ppp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/img_profile"
+            android:text="Lorem Ipsum"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/potosampul"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/img_profile"
+            android:text="54652321365"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/rl"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_profile" />
+        <!--    <androidx.recyclerview.widget.RecyclerView-->
+        <!--        android:layout_below="@+id/ppp"-->
+        <!--        android:id="@+id/rcv_profile"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent">-->
+
+        <!--    </androidx.recyclerview.widget.RecyclerView>-->
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ppp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/elliotsans_medium"
+                        android:text="Username"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/usernameprofile"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/et_border"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="text"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/elliotsans_medium"
+                        android:text="Email"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/emailprofile"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/et_border"
+                        android:clickable="false"
+                        android:focusable="false"
+
+                        android:inputType="textEmailAddress"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
