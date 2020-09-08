@@ -162,7 +162,7 @@ class Add_Event : AppCompatActivity() {
     ) {
         val nameXXX = UUID.randomUUID().toString()
         val id_event = UUID.randomUUID().toString()
-        val uid = fAuth.currentUser.uid
+        val uid = fAuth.currentUser?.uid
         if (filePathImage == Uri.EMPTY) {
             Toast.makeText(this, "Masukan brosur event", Toast.LENGTH_SHORT).show()
             return
@@ -257,12 +257,12 @@ class Add_Event : AppCompatActivity() {
         }
         when (requestCode) {
             REQUEST_CODE_IMAGE -> {
-                filePathImage = data.data!!
+                filePathImage = data?.data!!
                 try {
                     val bitmap: Bitmap = MediaStore
                         .Images.Media.getBitmap(
-                        this.contentResolver, filePathImage
-                    )
+                            this.contentResolver, filePathImage
+                        )
                     Glide.with(this).load(bitmap)
                         .override(250, 250)
                         .centerCrop().into(imgbrosur)

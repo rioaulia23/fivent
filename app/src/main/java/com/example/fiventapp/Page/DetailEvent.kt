@@ -96,7 +96,7 @@ class DetailEvent : AppCompatActivity() {
                 e.printStackTrace()
             }
         }
-        if (fAuth.currentUser.uid != iduser) {
+        if (fAuth.currentUser?.uid != iduser) {
             if (tersisa!!.toInt() == 0) {
                 btn_chat.visibility = View.GONE
             }

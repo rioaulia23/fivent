@@ -30,7 +30,7 @@ class Wishlist : AppCompatActivity() {
 
         dbRef = FirebaseDatabase.getInstance()
             .reference.child("favorite")
-        dbRef.orderByChild("${fAuth.currentUser.uid}").addValueEventListener(object :
+        dbRef.orderByChild("${fAuth.currentUser?.uid}").addValueEventListener(object :
             ValueEventListener {
             override fun onDataChange(p0: DataSnapshot) {
                 list = ArrayList()

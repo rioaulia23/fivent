@@ -164,8 +164,8 @@ class SignUp : AppCompatActivity() {
 //        born: String
     ) {
         val nameXXX = UUID.randomUUID().toString()
-        val uidUser = fAuth.currentUser.uid
-        val uid = fAuth.currentUser.uid
+        val uidUser = fAuth.currentUser?.uid
+        val uid = fAuth.currentUser?.uid
         if (filePathImage == Uri.EMPTY) {
             Toast.makeText(this, "Masukan foto profile", Toast.LENGTH_SHORT).show()
             return
@@ -233,12 +233,12 @@ class SignUp : AppCompatActivity() {
         }
         when (requestCode) {
             REQUEST_CODE_IMAGE -> {
-                filePathImage = data.data!!
+                filePathImage = data?.data!!
                 try {
                     val bitmap: Bitmap = MediaStore
                         .Images.Media.getBitmap(
-                        this.contentResolver, filePathImage
-                    )
+                            this.contentResolver, filePathImage
+                        )
                     Glide.with(this).load(bitmap)
                         .override(250, 250)
                         .centerCrop().into(ava)

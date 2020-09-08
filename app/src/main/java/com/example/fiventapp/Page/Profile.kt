@@ -39,7 +39,7 @@ class Profile : AppCompatActivity() {
     }
 
     fun getData() {
-        val userid = fAuth.currentUser.uid
+        val userid = fAuth.currentUser?.uid
         val dataUserRef = FirebaseDatabase.getInstance().getReference("user/$userid")
 
         FirebaseDatabase.getInstance().getReference("user/${userid}")

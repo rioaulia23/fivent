@@ -212,7 +212,7 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
 
 
     fun getDataDrawer() {
-        FirebaseDatabase.getInstance().getReference("user/${fAuth.currentUser.uid}")
+        FirebaseDatabase.getInstance().getReference("user/${fAuth.currentUser?.uid}")
             .child("ava").addListenerForSingleValueEvent(object : ValueEventListener {
 
                 override fun onDataChange(p0: DataSnapshot) {
@@ -226,7 +226,7 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
 
                 }
             })
-        FirebaseDatabase.getInstance().getReference("user/${fAuth.currentUser.uid}")
+        FirebaseDatabase.getInstance().getReference("user/${fAuth.currentUser?.uid}")
             .child("name").addListenerForSingleValueEvent(object : ValueEventListener {
 
                 override fun onDataChange(p0: DataSnapshot) {
@@ -237,7 +237,7 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
 
                 }
             })
-        FirebaseDatabase.getInstance().getReference("user/${fAuth.currentUser.uid}")
+        FirebaseDatabase.getInstance().getReference("user/${fAuth.currentUser?.uid}")
             .child("email").addListenerForSingleValueEvent(object : ValueEventListener {
 
                 override fun onDataChange(p0: DataSnapshot) {

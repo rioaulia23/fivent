@@ -74,7 +74,7 @@ class EditProfile : AppCompatActivity() {
                 }
             }
         }
-        val userid = fAuth.currentUser.uid
+        val userid = fAuth.currentUser?.uid
         val dataUserRef = FirebaseDatabase.getInstance().getReference("user/$userid")
 
 
@@ -120,7 +120,7 @@ class EditProfile : AppCompatActivity() {
 
         if (id == R.id.save) {
             if (name.isNotEmpty() && username.isNotEmpty() && email.isNotEmpty()) {
-                val userid = fAuth.currentUser.uid
+                val userid = fAuth.currentUser?.uid
                 val eteditnamao = et_name_edit.text.toString()
                 val edituser = et_username_edit
                 dbRef = FirebaseDatabase.getInstance().reference
@@ -192,12 +192,12 @@ class EditProfile : AppCompatActivity() {
         }
         when (requestCode) {
             REQUEST_CODE_IMAGE -> {
-                filePathImage = data.data!!
+                filePathImage = data?.data!!
                 try {
                     val bitmap: Bitmap = MediaStore
                         .Images.Media.getBitmap(
-                        this.contentResolver, filePathImage
-                    )
+                            this.contentResolver, filePathImage
+                        )
                     Glide.with(this).load(bitmap)
                         .override(100, 100)
                         .centerCrop().into(img_edit)

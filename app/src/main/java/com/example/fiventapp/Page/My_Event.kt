@@ -27,7 +27,7 @@ class My_Event : AppCompatActivity() {
         preferences = PrefHelper(this)
         fAuth = FirebaseAuth.getInstance()
 
-        val userid = fAuth.currentUser.uid
+        val userid = fAuth.currentUser?.uid
 
 
         var linearLayoutManager = LinearLayoutManager(this)
